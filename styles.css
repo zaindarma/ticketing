@@ -65,7 +65,7 @@ nav img {
 }
 
 .banner {
-  height: 100vh; /* Full screen height */
+  height: fit-content; /* Full screen height */
 }
 
 .banner img {
