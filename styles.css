@@ -475,13 +475,11 @@ hr {
   padding-bottom: 30px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .banner {
-    height: 80vh;
+    height: 60vh; /* Reduce height */
   }
-}
 
-@media (max-width: 1000px) {
   nav ul {
     display: none;
   }
@@ -505,12 +503,6 @@ hr {
   .about {
     padding-left: 40px;
     padding-right: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  .banner {
-    height: 60vh; /* Reduce height */
   }
 
   .item {
