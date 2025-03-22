@@ -16,7 +16,6 @@ nav {
   padding: 10px 20px;
   background-color: white;
   color: white;
-  position: relative;
 }
 
 nav ul {
@@ -33,31 +32,17 @@ nav ul li a {
   color: black;
 }
 
-/* NAVIGATION LINKS */
-.nav-links {
+/* DETAIL NAV */
+.detailNav {
   display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 22px;
-  left: 0;
-  width: 100%;
   background-color: white;
-  padding: 0;
-  overflow: hidden;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  color: white;
 }
 
-.nav-links li {
-  padding: 15px;
-  list-style: none;
-}
-
-.nav-links a {
-  color: black;
+.detailNav ul li a {
   text-decoration: none;
-  font-size: 16px;
+  color: black;
+  line-height: 2.5;
 }
 
 /* BURGER MENU */
@@ -68,11 +53,10 @@ nav ul li a {
   color: black;
 }
 
-/* SHOW MENU WITH ANIMATION */
-.nav-links.active {
+/* SHOW MENU */
+.detailNav.active {
   display: flex;
   opacity: 1;
-  transform: translateY(0);
 }
 
 nav img {
@@ -118,6 +102,85 @@ nav img {
   padding-inline: 80px;
 }
 
+/* CAROUSEL */
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: white;
+}
+
+.wrapper {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  cursor: grab;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+.item {
+  flex: 0 0 calc(50% - 5px); /* Show two images per view */
+  scroll-snap-align: start;
+  text-align: center;
+  user-select: none; /* Prevent text selection */
+}
+
+.item img {
+  width: 100%;
+  pointer-events: none; /* Prevent image interference */
+}
+
+/* Dotted Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.nav-btn.prev {
+  left: 10px;
+}
+
+.nav-btn.next {
+  right: 10px;
+}
+
 hr {
   border: none;
   height: 1px;
@@ -130,58 +193,6 @@ hr {
   font-family: "Montserrat", sans-serif;
   color: #1d1c1d;
   text-align: center;
-}
-
-.slider-container {
-  width: 100%;
-  overflow: hidden; /* Hides scrollbar */
-  margin: auto;
-  cursor: grab;
-  white-space: nowrap;
-}
-
-.aboutWristband {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-  gap: 10px;
-}
-
-.aboutWristband img {
-  width: 50%;
-  flex: 0 0 50%;
-  object-fit: cover;
-  user-select: none; /* Prevents text selection while dragging */
-  pointer-events: none;
-}
-
-.slider-container::-webkit-scrollbar {
-  display: none;
-}
-
-.slider-container {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.dots-container {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 5px;
-  background-color: gray;
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* ACTIVE DOT */
-.dot.active {
-  background-color: black;
 }
 
 .aboutEvent {
@@ -483,6 +494,7 @@ hr {
     display: flex;
     justify-content: space-between;
     padding-block: 5px;
+    align-items: center;
   }
 
   .news {
@@ -500,6 +512,31 @@ hr {
   .banner {
     height: 60vh; /* Reduce height */
   }
+
+  .item {
+    flex: 0 0 100%;
+  }
+
+  /* Dotted Pagination */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .dot.active {
+    background-color: #333;
+  }
 }
 
 @media (max-width: 480px) {
@@ -507,14 +544,37 @@ hr {
     height: 30vh; /* Reduce height */
   }
 
+  .aboutEvent {
+    display: flex;
+    flex-direction: column;
+  }
+
   nav img {
     width: 300px;
     height: 20px;
   }
 
-  .aboutEvent {
-    display: flex;
-    flex-direction: column;
+  .about {
+    padding-inline: 15px;
+  }
+
+  .news {
+    padding-block: 10px;
+    padding-inline: 20px;
+  }
+
+  .news h2 {
+    padding-top: 30px;
+    font-size: 24px;
+  }
+
+  .news p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .aboutEvent h2 {
+    font-size: 10px;
   }
 
   .aboutEvent img {
@@ -535,5 +595,29 @@ hr {
   .aboutLayoutDate {
     display: flex;
     flex-direction: column;
+  }
+
+  .aboutTCList li {
+    font-size: 14px;
+  }
+
+  .aboutTCList p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner {
+    height: 25vh; /* Reduce height */
+  }
+
+  nav {
+    gap: 15px;
+  }
+
+  nav img {
+    width: 250px;
+    height: 20px;
   }
 }
