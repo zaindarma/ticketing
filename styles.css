@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Basier+Circle&display=swap");
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Basier Circle", sans-serif;
+}
+
+nav {
+  background-color: white;
+  padding-inline: 22px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+nav img {
+  width: 420px;
+  height: 30px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.banner {
+  height: 120vh; /* Full screen height */
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news {
+  padding: 50px;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 100px;
+  color: #1d1c1d;
+}
+
+.news h2 {
+  font-size: xx-large;
+  font-family: "Montserrat", sans-serif;
+}
+
+.news p {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.about {
+  min-height: 100vh;
+  background-color: white;
+  padding-inline: 80px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, whitesmoke, black, whitesmoke);
+  margin-block: 40px;
+}
+
+.about h2 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  color: #1d1c1d;
+  text-align: center;
+}
+
+.aboutWristband {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.aboutWristband img {
+  width: 50%;
+  height: 50%;
+}
+
+.aboutVideos {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.aboutVideos img {
+  width: 25%;
+  height: 100%;
+}
+
+.aboutLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.aboutLayout img {
+  width: 100%;
+  height: 100%;
+}
+
+.aboutLayoutDate {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.aboutLayoutDate div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.aboutLayoutDate button {
+  background-color: rgba(55, 65, 81);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  padding-block: 10px;
+}
+
+.aboutLayoutDate button:hover {
+  background-color: #1d1c1d;
+}
+
+.aboutLayoutDate p {
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.aboutTCList {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutTCList h2 {
+  font-size: 14px;
+  text-decoration: underline;
+  font-family: "Montserrat", sans-serif;
+  color: #1d1c1d;
+  display: flex;
+  justify-items: start;
+}
+
+.aboutTCList p {
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutTCList span {
+  color: red;
+  font-style: italic;
+}
+
+.listOnList span {
+  color: black;
+}
+
+.spanList {
+  color: red;
+  font-style: italic;
+}
+
+.temPresent {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  color: #1d1c1d;
+}
+
+.temPresent img {
+  width: 10%;
+  height: 100%;
+}
+
+.pkEntertainment {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  color: #1d1c1d;
+  padding-top: 50px;
+}
+
+.pkEntertainment img {
+  width: 15%;
+  height: 100%;
+}
+
+.bankPartner {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1d1c1d;
+  padding-top: 50px;
+}
+
+.bankPartner h2 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #1d1c1d;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.bankPartner img {
+  width: 35%;
+  height: 100%;
+}
+
+.mobilityMedic {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mobilityPartner {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1d1c1d;
+  padding-top: 50px;
+}
+
+.mobilityPartner h2 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #1d1c1d;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.mobilityPartner img {
+  width: 60%;
+  height: 100%;
+}
+
+.medicPartner {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1d1c1d;
+  padding-top: 50px;
+}
+
+.medicPartner h2 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #1d1c1d;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.medicPartner img {
+  width: 60%;
+  height: 100%;
+}
+
+.partner {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1d1c1d;
+}
+
+.partner h2 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #1d1c1d;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.partnerList {
+  display: flex;
+  justify-content: center;
+}
+
+.partnerList img {
+  width: 100%;
+  height: 100%;
+}
+
+.mediaPartner {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1d1c1d;
+}
+
+.mediaPartner h2 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #1d1c1d;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.mediaPartner img {
+  width: 100%;
+  height: 100%;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.brand span {
+  font-weight: normal;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1000px) {
+  nav ul {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    padding-block: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 70vh; /* Reduce height */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 40vh; /* Reduce height */
+  }
+
+  nav img {
+    width: 300px;
+    height: 20px;
+  }
+}
