@@ -23,6 +23,11 @@ nav img {
   height: 30px;
 }
 
+.burger {
+  cursor: pointer;
+  display: none;
+}
+
 nav ul {
   display: flex;
   flex-direction: row;
@@ -379,9 +384,12 @@ hr {
     display: none;
   }
 
+  .burger {
+    display: block;
+  }
+
   nav {
     display: flex;
-    justify-content: center;
     padding-block: 5px;
   }
 
