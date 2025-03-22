@@ -37,7 +37,7 @@ nav ul li a {
 }
 
 .banner {
-  height: 120vh; /* Full screen height */
+  height: 100vh; /* Full screen height */
 }
 
 .banner img {
@@ -368,6 +368,12 @@ hr {
   padding-bottom: 30px;
 }
 
+@media (max-width: 1024px) {
+  .banner {
+    height: 80vh;
+  }
+}
+
 @media (max-width: 1000px) {
   nav ul {
     display: none;
@@ -392,13 +398,13 @@ hr {
 
 @media (max-width: 768px) {
   .banner {
-    height: 70vh; /* Reduce height */
+    height: 60vh; /* Reduce height */
   }
 }
 
 @media (max-width: 480px) {
   .banner {
-    height: 40vh; /* Reduce height */
+    height: 30vh; /* Reduce height */
   }
 
   nav img {
