@@ -60,8 +60,8 @@ nav ul li a {
 }
 
 nav img {
-  width: 420px;
-  height: 30px;
+  width: 250px;
+  height: auto;
 }
 
 .banner {
@@ -275,8 +275,14 @@ hr {
 }
 
 .aboutTCList h2 {
-  font-size: 14px;
-  text-decoration: underline;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #1d1c1d;
+  display: flex;
+  justify-items: start;
+}
+.aboutTCList h3 {
+  font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color: #1d1c1d;
   display: flex;
@@ -306,15 +312,15 @@ hr {
   font-style: italic;
 }
 
-.temPresent {
+.srpresent {
   background-color: white;
   display: flex;
   flex-direction: column;
   color: #1d1c1d;
 }
 
-.temPresent img {
-  width: 10%;
+.srpresent img {
+  width: 30%;
   height: 100%;
 }
 
@@ -346,7 +352,6 @@ hr {
   font-family: "Montserrat", sans-serif;
   color: #1d1c1d;
   text-align: center;
-  text-decoration: underline;
 }
 
 .bankPartner img {
@@ -375,7 +380,6 @@ hr {
   font-family: "Montserrat", sans-serif;
   color: #1d1c1d;
   text-align: center;
-  text-decoration: underline;
 }
 
 .mobilityPartner img {
@@ -398,7 +402,6 @@ hr {
   font-family: "Montserrat", sans-serif;
   color: #1d1c1d;
   text-align: center;
-  text-decoration: underline;
 }
 
 .medicPartner img {
@@ -420,7 +423,6 @@ hr {
   font-family: "Montserrat", sans-serif;
   color: #1d1c1d;
   text-align: center;
-  text-decoration: underline;
 }
 
 .partnerList {
@@ -447,7 +449,6 @@ hr {
   font-family: "Montserrat", sans-serif;
   color: #1d1c1d;
   text-align: center;
-  text-decoration: underline;
 }
 
 .mediaPartner img {
@@ -542,7 +543,7 @@ hr {
   }
 
   nav img {
-    width: 300px;
+    width: 250px;
     height: 20px;
   }
 
@@ -597,6 +598,11 @@ hr {
     font-size: 14px;
     line-height: 20px;
   }
+
+  .aboutPromoters h2 {
+    font-size: 24px;
+    text-align: center;    
+  }  
 }
 
 @media (max-width: 375px) {
